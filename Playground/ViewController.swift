@@ -8,15 +8,15 @@
 
 import UIKit
 
-class ViewController: UITableViewController, LineChartDelegate, BTDropInViewControllerDelegate {
-
+class ViewController: UIViewController, LineChartDelegate, BTDropInViewControllerDelegate {
+    var menuVC:MenuTableViewController!
     /*
     *   General stuff
     *
     */
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //self.menuVC = self.childViewControllers.
         self.navigationController!.navigationBar.barTintColor = UIColor(red:1.000, green:0.510, blue:0.373, alpha: 1)
     }
     override func didReceiveMemoryWarning() {
@@ -33,7 +33,6 @@ class ViewController: UITableViewController, LineChartDelegate, BTDropInViewCont
     var lineChart: LineChart?
     var data: Array<CGFloat> = [3, 4, 9, 11, 13, 15]
     var data2: Array<CGFloat> = [1, 3, 5, 13, 17, 20]
-    @IBOutlet weak var lineChartView: UIView!
     @IBOutlet weak var lineChartViewTwo: UIView!
     
     override func viewWillLayoutSubviews() {
@@ -70,7 +69,7 @@ class ViewController: UITableViewController, LineChartDelegate, BTDropInViewCont
     var braintree:Braintree!
     
     // Ask for a payment nonce from the server. This should be done once the application loads up.
-    @IBAction func braintreeButtonPressed(sender: UIButton) {
+    func braintreeButtonPressed() {
         let manager = AFHTTPRequestOperationManager()
         manager.GET("http://noq.at/braintree/", parameters: [],
             success: {
@@ -86,6 +85,7 @@ class ViewController: UITableViewController, LineChartDelegate, BTDropInViewCont
         self.braintree = Braintree(clientToken: clientToken)
         
         var dropInViewController = self.braintree.dropInViewControllerWithDelegate(self)
+        dropInViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Cancel, target: self, action: "userCancelledPayment:")
         let navigationController = UINavigationController(rootViewController: dropInViewController)
         self.presentViewController(navigationController, animated: true, completion: nil)
 
@@ -96,6 +96,9 @@ class ViewController: UITableViewController, LineChartDelegate, BTDropInViewCont
     }
     // If the user canceled, remove the navigation controller from the queue.
     func dropInViewControllerDidCancel(viewController: BTDropInViewController!) {
+        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    func userCancelledPayment(sender: UIBarButtonItem){
         self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     // Creates the payment by sending the nonce to the server endpoint.
