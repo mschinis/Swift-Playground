@@ -20,16 +20,43 @@ PODS:
   - AFNetworking/UIKit (2.4.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Braintree (3.4.1):
+    - Braintree/API
+    - Braintree/Drop-In
+    - Braintree/Payments
+    - Braintree/PayPal
+    - Braintree/UI
+    - Braintree/Venmo
+  - Braintree/API (3.4.1)
+  - Braintree/Drop-In (3.4.1):
+    - Braintree/API
+    - Braintree/Payments
+    - Braintree/PayPal
+    - Braintree/UI
+    - Braintree/Venmo
+  - Braintree/Payments (3.4.1):
+    - Braintree/API
+    - Braintree/PayPal
+    - Braintree/Venmo
+  - Braintree/PayPal (3.4.1):
+    - Braintree/API
+    - Braintree/UI
+  - Braintree/UI (3.4.1):
+    - Braintree/API
+  - Braintree/Venmo (3.4.1):
+    - Braintree/API
   - JSQMessagesViewController (6.0.0):
     - JSQSystemSoundPlayer (~> 2.0.0)
   - JSQSystemSoundPlayer (2.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - Braintree
   - JSQMessagesViewController
 
 SPEC CHECKSUMS:
   AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
+  Braintree: 114c4c56e686ad296ac45bbc63550682c7b862c8
   JSQMessagesViewController: 61c8defbe86f3859f796146f082f8231dad8de66
   JSQSystemSoundPlayer: c98443b1cbb3b45db09d0d3d6c2355cf78294981
 

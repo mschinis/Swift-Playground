@@ -4,4 +4,5 @@
 
 #import <JSQMessagesViewController/JSQMessages.h>
 #import <AFNetworking/AFNetworking.h>
+#import <Braintree/Braintree.h>
 #import "ProgressHUD/ProgressHUD.h"

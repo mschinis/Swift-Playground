@@ -1,0 +1,1 @@
+Get the latest PHP Braintree API from https://developers.braintreepayments.com/ios+php/sdk/server/setup

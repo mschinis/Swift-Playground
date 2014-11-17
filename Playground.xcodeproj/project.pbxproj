@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0075301A19019A003E2D23 /* BTPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00752F1A19019A003E2D23 /* BTPaymentViewController.swift */; };
 		CD7AD71C1A1620BB00BC9FEF /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD7AD7191A1620BB00BC9FEF /* ProgressHUD.bundle */; };
 		CD7AD71D1A1620BB00BC9FEF /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7AD71B1A1620BB00BC9FEF /* ProgressHUD.m */; };
 		CD9F6B711A1406DE0048AAE0 /* Playground.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9F6B701A1406DE0048AAE0 /* Playground.m */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		14C5C7C856A90161B2989B86 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CAC49481777E66E9838BBA04 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CD00752F1A19019A003E2D23 /* BTPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTPaymentViewController.swift; sourceTree = "<group>"; };
 		CD7AD7191A1620BB00BC9FEF /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		CD7AD71A1A1620BB00BC9FEF /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		CD7AD71B1A1620BB00BC9FEF /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				CDB271FB1A125EF0006AA1FD /* AppDelegate.swift */,
+				CD00752F1A19019A003E2D23 /* BTPaymentViewController.swift */,
 				CDB271FD1A125EF0006AA1FD /* ViewController.swift */,
 				CD9F6B721A141EE20048AAE0 /* MessagesViewController.swift */,
 				CDB271FF1A125EF0006AA1FD /* Main.storyboard */,
@@ -309,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0075301A19019A003E2D23 /* BTPaymentViewController.swift in Sources */,
 				CD9F6B731A141EE20048AAE0 /* MessagesViewController.swift in Sources */,
 				CDB2721E1A125F05006AA1FD /* LineChart.swift in Sources */,
 				CDB272221A12D539006AA1FD /* LineChartGraphOne.swift in Sources */,

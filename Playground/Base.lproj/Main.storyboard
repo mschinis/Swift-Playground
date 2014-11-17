@@ -19,21 +19,8 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIB-lT-JCJ">
                                 <rect key="frame" x="0.0" y="64" width="600" height="268"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hD5-Te-hcg">
-                                        <rect key="frame" x="274" y="119" width="53" height="30"/>
-                                        <state key="normal" title="To Chat">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="POu-MW-IfI" kind="show" id="jXe-RA-CEJ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerY" secondItem="hD5-Te-hcg" secondAttribute="centerY" id="5PK-RG-wfP"/>
-                                    <constraint firstAttribute="centerX" secondItem="hD5-Te-hcg" secondAttribute="centerX" id="Zii-5i-duJ"/>
                                     <constraint firstAttribute="height" constant="273" id="j5I-Hb-GQP"/>
                                 </constraints>
                                 <variation key="default">
@@ -103,7 +90,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgd-fa-IPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="-321"/>
+            <point key="canvasLocation" x="407" y="372"/>
         </scene>
     </scenes>
 </document>
